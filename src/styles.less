@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import 'variables';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    clear: both !important;
+}
+
+body {
+    font-family: 'Karla', sans-serif !important;
+    background-color: @bg-color !important;
+}
+
+#hero-wrapper {
+    margin-top: 62px;
+    background-image: url("/public/assets/img/main-bg.jpg");
+    background-size: 100%;
+    background-repeat: round;
+    height: 20vh;
+    color: @white-color;
+    font-size: 5rem;
+    opacity: 0.8;
+
+    @media screen and (min-width: @size-md) {
+        font-size: 13rem;
+        height: 40vh;
+    }
+}
+
+.jumbotron {
+    h3 {
+        @media screen and (max-width: @size-md) {
+            font-size: 2rem;
+        }
+    }
+
+    p {
+        @media screen and (max-width: @size-md) {
+            font-size: 15px !important;
+        }
+    }
+}
+
+.positions {
+    font-size: 15px;
+
+    @media screen and (min-width: @size-md) {
+        font-size: 25px;
+    }
+
+    div:nth-of-type(n+2) {
+        border-bottom: 1px solid @border-title;
+
+        div {
+            border-bottom: none;
+        }
+    }
+
+    .contact-info {
+        flex: 1;
+        color: @info-text-color;
+        font-size: 15px;
+    }
+
+    .hotel-info {
+        font-size: 20px;
+    }
+
+    .hotel-website {
+        color: @info-text-color;
+        &:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        @media screen and (max-width: @size-md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .price {
+        font-weight: bold;
+    }
+}
+
+.navbar {
+    width: 100vw;
+}
+
+.navbar-brand {
+    font-size: 15px !important;
+
+    @media screen and (min-width: @size-md) {
+        font-size: 20px !important;
+    }
+}
+
+img {
+    width: 25vh;
+}
+
+.hotel-title {
+    height: 10vh;
+
+    p:nth-of-type(2) {
+        color: @star-color;
+    }
+}
+
+.jumbo-header {
+    text-align: center;
+}
